@@ -1,19 +1,11 @@
 <h1>Listing Posts</h1>
 
-<%= link_to 'New Post', new_post_path %>
- 
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Text</th>
-  </tr>
- 
-  <% @posts.each do |post| %>
-    <tr>
-      <td><%= post.title %></td>
-      <td><%= post.created_at.strftime("%Y %B") %></td>
-      <td><%= link_to 'Show', post_path(post) %></td>
-   
-     </tr>
-  <% end %>
-</table>
+<div class="head-name">Sean Sullivan</div>
+<div class="menu-border"></div>
+
+<% @posts.each do |post| %>
+<div class="post-link">
+  <div class="post-link-date"><%= post.created_at.strftime("%Y %B") %></div>
+  <div class="post-link-title"><%= link_to post.title, post_path(post) %></div>
+</div>
+<% end %>
