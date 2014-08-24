@@ -2,11 +2,35 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.head-name {
-    width: 15em;
+
+.menu {
+	float: left;
+	height: 100%;
+
+	padding: 5px;
+
+
+	background: rgb(230,255,255);
+	border-right: solid 2px black;
+}
+
+.content {
+	display:inline-block;
+	background: rgb(255,255,230);
+
+	padding: .2em;
+}
+
+.menu-title {
     font-size: 1.2em;
+    width: 7em
 
+}
 
+.menu-link {
+	margin-left: auto;
+	margin-right: 0;
+	text-align: right;
 }
 
 .menu-border {
