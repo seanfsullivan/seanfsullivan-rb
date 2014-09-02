@@ -20,3 +20,7 @@
     -moz-box-sizing: border-box; /* Needed for Firefox */
     box-sizing: border-box
 }
+
+//= require_self
+//= require 'posts'
+//= require 'comments'
